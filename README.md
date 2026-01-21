@@ -1,0 +1,39 @@
+# Compile igsc
+
+[igsc.md](/igsc.md)
+
+Quick version (Ubuntu)
+
+    apt install libudev-dev build-essential cmake ninja-build
+    git clone https://github.com/intel/igsc.git
+    cd igsc/ && cmake -G Ninja -S . -B builddir && ninja -v -C builddir
+    mkdir igsc-bin && cp builddir/src/igsc builddir/lib/libigsc.so* igsc-bin/ && tar zcvf igsc-bin.tar.gz igsc-bin
+
+You now have a file igsc-bin.tar.gz with the binary and necessary libraries.
+
+# Get the firmware
+
+[firmware.md](/firmware.md)
+
+Quick version
+
+Go to the intel site and download the latest. https://www.intel.com/content/www/us/en/products/docs/discrete-gpus/arc/software/drivers.html
+
+Look for "Latest Professional GPU Drivers". This should take you to a download page where you can get gfx_win_versionnumber.exe
+
+    ./extract-firmware.sh /Path/To/gfx_win_version.exe
+
+# Flash the firmware
+
+[firmware.md](/firmware.md)
+
+Quick version (Arc Pro B50)
+
+Place the firmware files in the home directory of the user that will be performing the upgrade.
+
+Enter the directory with the igsc binary.
+
+    ./igsc fw update --device /dev/mei0 --image ../bmg/fwcode/bmg_g21_fwupdate.bin -a
+    ./igsc fw-data update --device /dev/mei0 --image ../bmg/fwdata/bmg_ibc-dws-b93_e212_config-data.bin -a
+    ./igsc oprom-code update --device /dev/mei0 --image ../bmg/opromcode/bmg_OpromCode.bin -a
+    ./igsc oprom-data update --device /dev/mei0 --image ../bmg/opromdata/bmg_e212_1114_config23.bin -a
