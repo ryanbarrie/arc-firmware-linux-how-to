@@ -2,7 +2,7 @@
 
 [igsc.md](/igsc.md)
 
-Quick version (Ubuntu)
+## Quick version (Ubuntu)
 
     apt install libudev-dev build-essential cmake ninja-build
     git clone https://github.com/intel/igsc.git
@@ -15,7 +15,7 @@ You now have a file igsc-bin.tar.gz with the binary and necessary libraries.
 
 [firmware.md](/firmware.md)
 
-Quick version
+## Quick version
 
 Install binwalk and ensure it is in your PATH.
 
@@ -31,7 +31,9 @@ Then extract it with the included bash script.
 
 [firmware.md](/firmware.md)
 
-Quick version (Arc Pro B50)
+## Quick version (Arc Pro B50)
+
+Replace the image files with the ones for your card if it's not an Arc Pro B50. Replace mei0 with the device ID of your Arc card if you have multiple cards.
 
 Place the firmware directory (bmg) in the home directory of the user that will be performing the upgrade.
 
