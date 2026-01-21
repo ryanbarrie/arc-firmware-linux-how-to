@@ -1,6 +1,6 @@
 # Compile igsc
 
-[igsc.md](/igsc.md)
+Detailed instructions at [igsc.md](/igsc.md)
 
 ## Quick version (Ubuntu)
 
@@ -13,7 +13,7 @@ You now have a file igsc-bin.tar.gz with the binary and necessary libraries.
 
 # Get the firmware
 
-[firmware.md](/firmware.md)
+Detailed instructions at [firmware.md](/firmware.md)
 
 ## Quick version
 
@@ -29,7 +29,7 @@ Then extract it with the included bash script.
 
 # Flash the firmware
 
-[firmware.md](/firmware.md)
+Detailed instructions at [firmware.md](/firmware.md)
 
 ## Quick version (Arc Pro B50)
 
