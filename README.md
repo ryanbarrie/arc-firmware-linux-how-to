@@ -29,11 +29,11 @@ Look for "Latest Professional GPU Drivers". This should take you to a download p
 
 Quick version (Arc Pro B50)
 
-Place the firmware files in the home directory of the user that will be performing the upgrade.
+Place the firmware directory (bmg) in the home directory of the user that will be performing the upgrade.
 
 Enter the directory with the igsc binary.
 
-    ./igsc fw update --device /dev/mei0 --image ../bmg/fwcode/bmg_g21_fwupdate.bin -a
-    ./igsc fw-data update --device /dev/mei0 --image ../bmg/fwdata/bmg_ibc-dws-b93_e212_config-data.bin -a
-    ./igsc oprom-code update --device /dev/mei0 --image ../bmg/opromcode/bmg_OpromCode.bin -a
-    ./igsc oprom-data update --device /dev/mei0 --image ../bmg/opromdata/bmg_e212_1114_config23.bin -a
+    ./igsc fw update --device /dev/mei0 --image ~/bmg/fwcode/bmg_g21_fwupdate.bin -a
+    ./igsc fw-data update --device /dev/mei0 --image ~/bmg/fwdata/bmg_ibc-dws-b93_e212_config-data.bin -a
+    ./igsc oprom-code update --device /dev/mei0 --image ~/bmg/opromcode/bmg_OpromCode.bin -a
+    ./igsc oprom-data update --device /dev/mei0 --image ~/bmg/opromdata/bmg_e212_1114_config23.bin -a
