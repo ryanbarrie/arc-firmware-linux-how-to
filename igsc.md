@@ -18,7 +18,7 @@ Install gcc, cmake, ninja-build, libudev-devel
     cmake -G Ninja -S . -B builddir
     ninja -v -C builddir
 
-## Create igsg package
+## Create igsc package
 
     mkdir igsc-bin
     cp builddir/src/igsc builddir/lib/libigsc.so* igsc-bin/
@@ -31,3 +31,5 @@ Copy the resulting igsc-bin.tar.gz to the target machine, extract it with
     tar xf igsc-bin.tar.gz
 
 Test it by entering the igsc-bin directory and running ./igsc --help
+
+NOTE: You must enter the directory that the igsc binary is in before running it. This is so that the .so library it depends on can be found. There is almost certainly a cleaner way to do this, I can't be bothered.
