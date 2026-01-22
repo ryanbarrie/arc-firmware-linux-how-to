@@ -6,7 +6,12 @@
 
 ### Other distros
 
-Install gcc, cmake, ninja-build, libudev-devel, git
+Install:
+* gcc
+* cmake
+* ninja-build
+* libudev-devel
+* git
 
 ## Clone igsc repo
 

@@ -1,6 +1,7 @@
 ## Prereqs
 
-binwalk and bash are required
+* binwalk
+* bash
 
 ## Get firmware
 
