@@ -5,9 +5,9 @@ Detailed instructions at [igsc.md](/igsc.md)
 ## Quick version (Ubuntu)
 
     apt install libudev-dev build-essential cmake ninja-build
-    git clone https://github.com/intel/igsc.git
-    cd igsc/ && cmake -G Ninja -S . -B builddir && ninja -v -C builddir
-    mkdir igsc-bin && cp builddir/src/igsc builddir/lib/libigsc.so* igsc-bin/ && tar zcvf igsc-bin.tar.gz igsc-bin
+    git clone https://github.com/intel/igsc.git && cd igsc/
+    cmake -G Ninja -S . -B builddir && ninja -v -C builddir
+    mkdir -p igsc-bin && cp builddir/src/igsc builddir/lib/libigsc.so* igsc-bin/ && tar zcvf igsc-bin.tar.gz igsc-bin
 
 You now have a file igsc-bin.tar.gz with the binary and necessary libraries.
 

@@ -20,7 +20,7 @@ Install gcc, cmake, ninja-build, libudev-devel, git
 
 ## Create igsc package
 
-    mkdir igsc-bin
+    mkdir -p igsc-bin
     cp builddir/src/igsc builddir/lib/libigsc.so* igsc-bin/
     tar zcvf igsc-bin.tar.gz igsc-bin
 
