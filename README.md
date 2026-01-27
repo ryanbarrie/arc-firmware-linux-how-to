@@ -47,3 +47,17 @@ Enter the directory with the igsc binary.
     ./igsc fw-data update --device /dev/mei0 --image ~/bmg/fwdata/bmg_ibc-dws-b93_e212_config-data.bin -a
     ./igsc oprom-code update --device /dev/mei0 --image ~/bmg/opromcode/bmg_OpromCode.bin -a
     ./igsc oprom-data update --device /dev/mei0 --image ~/bmg/opromdata/bmg_e212_1114_config23.bin -a
+
+# Credits/Shoutouts
+
+## Mechanical on Level1Techs
+
+Thank you to Mechanical on the Level1Techs forum.
+
+https://forum.level1techs.com/t/remember-to-update-your-intel-arc-firmware-on-linux/208736/1
+
+## Solaris17 on TechPowerUp
+
+Thank you to Solaris17 on the TechPowerUp forum.
+
+https://www.techpowerup.com/forums/threads/intel-arc-firmware-compilation-matrix.312440/
