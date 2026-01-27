@@ -61,3 +61,7 @@ https://forum.level1techs.com/t/remember-to-update-your-intel-arc-firmware-on-li
 Thank you to Solaris17 on the TechPowerUp forum.
 
 https://www.techpowerup.com/forums/threads/intel-arc-firmware-compilation-matrix.312440/
+
+# License
+
+This project uses the Unlicense. Details at [UNLICENSE](/UNLICENSE). TL;DR: Have fun, I carry zero liability, and you don't have to credit me if you transform or even profit from this work. Software Copyright is so 2000 and late.
