@@ -17,7 +17,7 @@ Detailed instructions at [firmware.md](/firmware.md)
 
 ## Quick version
 
-Install binwalk and ensure it is in your PATH.
+Install binwalk and unrar.
 
 Go to the intel site and download the latest. https://www.intel.com/content/www/us/en/products/docs/discrete-gpus/arc/software/drivers.html
 

@@ -2,6 +2,7 @@
 
 * binwalk
 * bash
+* unrar
 
 ## Get firmware
 
